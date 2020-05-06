@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gargle_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gargle/gargle_{{ version }}.tar.gz
-  sha256: fd7db5839ab8a9e407050200ba26f8e35defd5484cd812cbe0820caac574f023
+  sha256: 96c0a939742548d7775ffcb164f1343014c5183e99a71c465489a13e76acd3bb
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,12 +48,10 @@ test:
 about:
   home: https://gargle.r-lib.org, https://github.com/r-lib/gargle
   license: MIT
-  summary: Provides utilities for working with Google APIs <https://developers.google.com/apis-explorer>.  This
-    includes functions and classes for handling common credential types and for preparing,
-    executing, and processing HTTP requests.
+  summary: Provides utilities for working with Google APIs <https://developers.google.com/apis-explorer>.  This includes functions and classes for handling common credential types and for preparing, executing, and processing HTTP requests.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
