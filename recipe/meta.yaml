@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gargle_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gargle/gargle_{{ version }}.tar.gz
-  sha256: f0fef4ee84e45d342ed48a111f8ef0bb69a2e8a99e5f31b7b1bc8ce420b15843
+  sha256: 7ce429638a3e3286e78f801636b3671400c0ea1647a159fa4d7c91f27f4bc20f
 
 build:
   merge_build_host: true  # [win]
