@@ -1,13 +1,15 @@
 About r-gargle
 ==============
 
-Home: https://gargle.r-lib.org, https://github.com/r-lib/gargle
+Home: https://gargle.r-lib.org
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gargle-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides utilities for working with Google APIs <https://developers.google.com/apis-explorer>.  This includes functions and classes for handling common credential types and for preparing, executing, and processing HTTP requests.
+
+Development: https://github.com/r-lib/gargle
 
 Current build status
 ====================
